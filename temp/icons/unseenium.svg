@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- Primary bluish metallic gradient -->
+        <linearGradient id="bluishMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#a5c9ea" />
+            <stop offset="25%" stop-color="#7ab3d3" />
+            <stop offset="50%" stop-color="#4a5568" />
+            <stop offset="75%" stop-color="#6ba0c7" />
+            <stop offset="100%" stop-color="#8bb8d8" />
+        </linearGradient>
+
+        <!-- Accent metallic gradient for highlights -->
+        <linearGradient id="accentMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#8bb8d8" />
+            <stop offset="30%" stop-color="#5fa5cc" />
+            <stop offset="70%" stop-color="#3a8bb8" />
+            <stop offset="100%" stop-color="#2d5a7a" />
+        </linearGradient>
+
+        <!-- Dark metallic gradient for depth -->
+        <linearGradient id="darkMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#6a7b8a" />
+            <stop offset="30%" stop-color="#556270" />
+            <stop offset="70%" stop-color="#4a5568" />
+            <stop offset="100%" stop-color="#3a4553" />
+        </linearGradient>
+
+        <!-- Glow filter for metallic effect -->
+        <filter id="metalGlow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="0.5" result="coloredBlur" />
+            <feMerge>
+                <feMergeNode in="coloredBlur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+
+        <style>
+            .metal-primary {
+                fill: url(#bluishMetal);
+                fill-rule: evenodd;
+                filter: url(#metalGlow);
+            }
+
+            .metal-accent {
+                fill: url(#accentMetal);
+                fill-rule: evenodd;
+                filter: url(#metalGlow);
+            }
+
+            .metal-dark {
+                fill: url(#darkMetal);
+                fill-rule: evenodd;
+            }
+        </style>
+    </defs>
+
+    <title>Unseenium_BluishMetallic_Logo</title>
+    <g data-name="Unseenium Logo">
+        <!-- Top and right faces - primary gradient -->
+        <polygon class="metal-primary" points="20.69 12.43 12 16.78 12 22 20.69 17.65 20.69 12.43" />
+        <polygon class="metal-primary" points="17.22 8.09 17.22 8.09 17.22 12.43 20.69 10.7 20.69 6.35 17.22 8.09" />
+        <polygon class="metal-primary" points="12 15.04 15.48 13.31 15.48 8.96 15.48 8.96 12 10.7 12 15.04" />
+
+        <!-- Central top elements - accent gradient -->
+        <polygon class="metal-accent" points="6.78 4.61 3.31 6.35 6.78 8.09 10.26 6.35 6.78 4.61" />
+        <polygon class="metal-accent" points="12 2 8.52 3.74 12 5.48 17.22 8.09 20.69 6.35 12 2" />
+        <polygon class="metal-accent" points="12 7.22 8.52 8.96 12 10.7 15.48 8.96 12 7.22" />
+
+        <!-- Left and bottom shadow elements - dark gradient -->
+        <path class="metal-dark" d="M6.78,4.61,3.31,6.35Z" />
+        <path class="metal-dark" d="M8.52,15v5.22L12,22V16.78Zm2.61,5.22-1.74-.87V16.78l1.74.87Z" />
+        <path class="metal-dark" d="M3.31,6.35v11.3l3.47,1.74V8.09Zm2.61,11.3-1.75-.87v-10l1.75.87Z" />
+        <path class="metal-dark" d="M8.52,9,12,10.7V15L8.52,13.31Zm2.61,4.35v-3L9.39,9.45v3Z" />
+    </g>
+</svg>

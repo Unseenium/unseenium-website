@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <!-- Left circle (blindspot) -->
+    <circle cx="9" cy="12" r="6" stroke="#2d3748" stroke-width="2" fill="none" />
+
+    <!-- Right circle (brightspot) -->
+    <circle cx="15" cy="12" r="6" stroke="#4a5568" stroke-width="2" fill="none" />
+
+    <!-- Intersection dot -->
+    <circle cx="12" cy="12" r="1.5" fill="#4a5568" />
+</svg>
