@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unseenium - Turning Blindspots into Brightspots</title>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <!-- Favicon - Multiple sizes for best rendering -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/Unseenium_Final_Transparent.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/Unseenium_Final_Transparent.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/Unseenium_Final_Transparent.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,14 +26,14 @@
             <div class="header-content">
                 <a href="#" class="logo">
                     <div class="logo-icon">
-                        <img src="assets/icons/unseenium.svg" alt="Unseenium Logo" style="width: 32px; height: 32px;">
+                        <img src="assets/icons/Unseenium_Final_Transparent.png" alt="Unseenium Logo">
                     </div>
                     <span>Unseenium</span>
                 </a>
                 <nav class="nav-links">
                     <a href="#about">About</a>
-                    <a href="#solutions">Solutions</a>
-                    <a href="#contact">Research</a>
+                    <a href="#products">Products</a>
+                    <a href="https://github.com/Unseenium" target="_blank" rel="noopener">GitHub</a>
                 </nav>
             </div>
         </div>
@@ -41,13 +43,32 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="assets/icons/Unseenium_Final_Transparent.png" alt="Unseenium">
+                </div>
                 <h1>Unseenium</h1>
                 <p class="tagline">Turning <span class="highlight">Blindspots</span> into <span
                         class="highlight">Brightspots</span>.</p>
                 <div class="hero-cta">
-                    <a href="#solutions" class="btn btn-primary">Explore Solutions</a>
+                    <a href="#products" class="btn btn-primary">View Products</a>
                     <a href="#about" class="btn btn-secondary">Learn More</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Status Banner -->
+    <section class="status-banner">
+        <div class="container">
+            <div class="status-content">
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Open to collaborations and feedback</span>
+                </div>
+                <a href="https://www.linkedin.com/in/arunsraman/" target="_blank" rel="noopener" class="get-in-touch">
+                    Get in touch with us
+                    <span class="arrow">→</span>
+                </a>
             </div>
         </div>
     </section>
@@ -68,21 +89,122 @@
         </div>
     </section>
 
-    <!-- Solutions Section -->
-    <section id="solutions" class="solutions">
+    <!-- Products Section -->
+    <section id="products" class="solutions">
         <div class="container">
             <div class="section-title">
-                <h2>Our Solution</h2>
-                <p>Currently shipping: collaborative reasoning for structured thinking</p>
+                <h2>Products</h2>
+                <p>Building in public • Open source • Privacy-first</p>
             </div>
-            <div class="solution-grid">
-                <div class="solution-card">
-                    <span class="icon">🧠</span>
-                    <h3>Reasonator</h3>
-                    <p>Collaborative reasoning platform where humans and AI co-create logic flows and decision trees for
-                        structured thinking.</p>
-                    <span class="status beta">Beta</span>
+            <div class="products-grid">
+                <!-- Hey Mike! - Live -->
+                <div class="product-card live" data-tilt>
+                    <div class="product-header">
+                        <span class="icon">🎤</span>
+                        <span class="status-badge live">Live</span>
+                    </div>
+                    <h3>Hey Mike!</h3>
+                    <p class="product-description">AI-powered voice dictation for macOS. Fast, private, works in 99+
+                        languages with on-device processing.</p>
+                    <div class="product-stats">
+                        <div class="product-stat">
+                            <span class="stat-value">v1.0.0</span>
+                            <span class="stat-label">Version</span>
+                        </div>
+                        <div class="product-stat">
+                            <span class="stat-value">macOS</span>
+                            <span class="stat-label">Platform</span>
+                        </div>
+                        <div class="product-stat">
+                            <span class="stat-value">Free</span>
+                            <span class="stat-label">Price</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/Unseenium/HeyMike/releases" target="_blank" rel="noopener"
+                            class="btn btn-primary btn-small">Download</a>
+                        <a href="https://github.com/Unseenium/HeyMike" target="_blank" rel="noopener"
+                            class="btn btn-secondary btn-small">GitHub</a>
+                    </div>
                 </div>
+
+                <!-- Coming Soon Product -->
+                <div class="product-card coming-soon" data-tilt>
+                    <div class="product-header">
+                        <span class="icon">
+                            <img src="assets/icons/vibe-coding-1.png" alt="Hey Mike Extension"
+                                style="width: 80px; height: 80px; border-radius: 12px;">
+                        </span>
+                        <span class="status-badge coming-soon">Coming Soon</span>
+                    </div>
+                    <h3>Hey Mike! Extension</h3>
+                    <p class="product-description">VS Code extension bringing AI-powered code understanding, voice
+                        notes, and semantic search to your editor.</p>
+                    <div class="product-stats">
+                        <div class="product-stat">
+                            <span class="stat-value">Soon</span>
+                            <span class="stat-label">Launch</span>
+                        </div>
+                        <div class="product-stat">
+                            <span class="stat-value">VS Code</span>
+                            <span class="stat-label">Platform</span>
+                        </div>
+                        <div class="product-stat">
+                            <span class="stat-value">Free</span>
+                            <span class="stat-label">Price</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/Unseenium/HeyMike" target="_blank" rel="noopener"
+                            class="btn btn-secondary btn-small">Follow Progress</a>
+                    </div>
+                </div>
+
+                <!-- Future Product Slot -->
+                <div class="product-card future" data-tilt>
+                    <div class="product-header">
+                        <span class="icon">🔮</span>
+                        <span class="status-badge future">In Research</span>
+                    </div>
+                    <h3>What's Next?</h3>
+                    <p class="product-description">We're exploring new tools for developers. Got an idea or pain point?
+                        Let us know what problems you face daily.</p>
+                    <div class="product-stats">
+                        <div class="product-stat">
+                            <span class="stat-value">TBD</span>
+                            <span class="stat-label">Launch</span>
+                        </div>
+                        <div class="product-stat">
+                            <span class="stat-value">???</span>
+                            <span class="stat-label">Platform</span>
+                        </div>
+                        <div class="product-stat">
+                            <span class="stat-value">Free</span>
+                            <span class="stat-label">Price</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/Unseenium" target="_blank" rel="noopener"
+                            class="btn btn-secondary btn-small">Share Ideas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3 class="newsletter-title">Stay in the Loop</h3>
+                <p class="newsletter-tagline">Get notified when we launch new products. No spam, just product updates.
+                </p>
+                <form class="newsletter-form" action="https://github.us21.list-manage.com/subscribe" method="post"
+                    target="_blank">
+                    <input type="email" name="EMAIL" placeholder="your@email.com" required class="newsletter-input">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                <p class="newsletter-note">Join the indie makers building in public</p>
             </div>
         </div>
     </section>
@@ -91,19 +213,42 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <h3 class="footer-title">Stay in the Loop</h3>
-                <p class="footer-tagline">We're always building. Sign up for our newsletter to get notified when we
-                    launch new products.</p>
                 <div class="footer-links">
-                    <a href="#" target="_blank" rel="noopener">Research</a>
                     <a href="https://github.com/Unseenium" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://github.com/Unseenium/HeyMike" target="_blank" rel="noopener">Hey Mike!</a>
+                    <a href="mailto:unseenium@gmail.com">Contact</a>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 Unseenium. All rights reserved.</p>
+                <p class="footer-tagline">Turning Blindspots into Brightspots.</p>
             </div>
         </div>
     </footer>
+
+    <!-- 3D Tilt Effect Script -->
+    <script>
+        // 3D Card Tilt Effect
+        document.querySelectorAll('[data-tilt]').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                const rotateX = (y - centerY) / 25;
+                const rotateY = (centerX - x) / 25;
+
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px) scale(1.01)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0) scale(1)';
+            });
+        });
+    </script>
 </body>
 
 </html>

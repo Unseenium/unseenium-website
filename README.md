@@ -4,6 +4,8 @@
 
 Static landing page for Unseenium - an indie AI product lab building practical AI solutions.
 
+Currently featuring [Hey Mike!](https://github.com/Unseenium/HeyMike) - AI-powered voice dictation for macOS.
+
 ## 🚀 Live Site
 
 [unseenium.com](https://unseenium.com)
