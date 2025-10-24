@@ -661,6 +661,8 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    I'm also thinking of adding one specific piece. For collaboration, and other things, like submitting the proposal. What do you think about this? Keep being honest.    max-width: 1200px;
+ justify-content: center;
 }
 
 .product-card {
@@ -676,6 +678,7 @@ section {
     text-align: center;
     transform-style: preserve-3d;
     perspective: 1000px;
+    max-width: 450px;
 }
 
 /* Subtle AI lab backgrounds for each card type */
@@ -885,16 +888,16 @@ section {
     text-align: center;
 }
 
-/* Newsletter Section */
-.newsletter-section {
+/* Collaboration Section */
+.collaboration-section {
     background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-dark) 100%);
     color: #ffffff;
-    padding: 4rem 0;
+    padding: 5rem 0;
     position: relative;
     overflow: hidden;
 }
 
-.newsletter-section::before {
+.collaboration-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -907,80 +910,64 @@ section {
     pointer-events: none;
 }
 
-.newsletter-content {
-    max-width: 600px;
+.collaboration-content {
+    max-width: 700px;
     margin: 0 auto;
     text-align: center;
     position: relative;
     z-index: 1;
 }
 
-.newsletter-title {
-    font-size: 2rem;
-    font-weight: 600;
+.collaboration-icon {
+    font-size: 3rem;
     margin-bottom: 1rem;
+    animation: gentleFloat 3s ease-in-out infinite;
+}
+
+.collaboration-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
     color: #ffffff;
 }
 
-.newsletter-tagline {
-    font-size: 1.125rem;
-    margin-bottom: 2rem;
+.collaboration-description {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
     color: rgba(255, 255, 255, 0.9);
 }
 
-.newsletter-form {
+.collaboration-cta {
     display: flex;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
+    gap: 1rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-.newsletter-input {
-    flex: 1;
-    min-width: 250px;
-    padding: 0.875rem 1.25rem;
-    border-radius: 8px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    color: #ffffff;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-}
-
-.newsletter-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.newsletter-input:focus {
-    outline: none;
-    border-color: #ffffff;
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-1px);
-}
-
-.newsletter-form .btn {
-    min-width: 140px;
-}
-
-.newsletter-form .btn-primary {
+.collaboration-cta .btn-primary {
     background: #ffffff;
     color: var(--accent-color);
     border: 2px solid #ffffff;
 }
 
-.newsletter-form .btn-primary:hover {
+.collaboration-cta .btn-primary:hover {
     background: transparent;
     color: #ffffff;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
 }
 
-.newsletter-note {
-    font-size: 0.875rem;
-    color: rgba(255, 255, 255, 0.7);
-    font-style: italic;
+.collaboration-cta .btn-secondary {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.collaboration-cta .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+    transform: translateY(-2px);
 }
 
 /* Footer */
@@ -1010,6 +997,32 @@ section {
     margin-bottom: 1.5rem;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.footer-description {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+.footer-description a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.footer-description a:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 .footer-links {
